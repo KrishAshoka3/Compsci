@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TabPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+         fx:controller="com.example.part5.MainController">
+    <tabs>
+        <Tab text="Add Workout">
+            <VBox spacing="10">
+                <HBox spacing="5">
+                    <TextField fx:id="clientNameField" promptText="Enter client name"/>
+                    <Button text="Add Client" onAction="#addClient"/>
+                </HBox>
+                <ListView fx:id="clientListView"/>
+                <HBox spacing="5">
+                    <TextField fx:id="exerciseNameField" promptText="Exercise Name"/>
+                    <TextField fx:id="setsField" promptText="Sets"/>
+                    <TextField fx:id="repsField" promptText="Reps"/>
+                    <TextField fx:id="weightField" promptText="Weight"/>
+                    <DatePicker fx:id="dateField"/>
+                    <Button text="Add Workout" onAction="#addWorkoutLog"/>
+                </HBox>
+                <ListView fx:id="workoutListView"/>
+                <Button text="Show Graph" onAction="#showGraph"/>
+            </VBox>
+        </Tab>
+        <Tab text="View Logs">
+            <VBox spacing="10">
+                <ListView fx:id="logListView"/>
+            </VBox>
+        </Tab>
+    </tabs>
+</TabPane>

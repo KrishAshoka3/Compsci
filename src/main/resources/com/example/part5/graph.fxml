@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.part5.GraphController">
+    <children>
+        <LineChart fx:id="lineChart" layoutX="14.0" layoutY="14.0" prefHeight="400.0" prefWidth="600.0">
+            <xAxis>
+                <NumberAxis fx:id="xAxis" />
+            </xAxis>
+            <yAxis>
+                <NumberAxis fx:id="yAxis" />
+            </yAxis>
+        </LineChart>
+    </children>
+</AnchorPane>
